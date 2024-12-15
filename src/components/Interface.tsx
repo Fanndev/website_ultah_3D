@@ -1,5 +1,5 @@
 import { Header } from "./Interface/Header";
-import { EventDetails } from "./Interface/EventDetails";
+import { EventDetails } from "./Interface/EvenDetails";
 import { Gallery } from "./Interface/Gallery";
 import { CommentForm } from "./Interface/Comments/CommentForm";
 import { CommentList } from "./Interface/Comments/CommentList";
