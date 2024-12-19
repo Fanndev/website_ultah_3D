@@ -4,6 +4,7 @@ import { birthdayConfig } from "../../config/birthday";
 export function EventDetails() {
   return (
     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-md rounded-lg p-6 pointer-events-auto">
+      <h3 className="text-2xl font-bold mb-2 text-white text-center pb-4">Event Details</h3>
       <div className="grid grid-cols-2 gap-6 text-white">
         <div className="flex items-center gap-3">
           <Calendar className="text-gold" />

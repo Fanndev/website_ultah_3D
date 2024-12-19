@@ -21,10 +21,11 @@ export function ThankYou() {
           className="text-2xl font-bold mb-2"
           style={{ color: birthdayConfig.colors.primary }}
         >
-          Thank You for Celebrating With Me!
+          Terima Kasih Telah Merayakan Bersama Saya!
         </h3>
         <p className="text-white/90">
-          Your presence makes this day even more special.
+          Kehadiran dan doamu membuat hari ini menjadi luar biasa dan penuh
+          kebahagiaan.
         </p>
       </div>
     </div>

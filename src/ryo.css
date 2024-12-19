@@ -34,7 +34,6 @@
 .alfContainer {
   height: 600px;
   width: 100vw;
-
   padding: 50px 100px;
 }
 
@@ -45,7 +44,9 @@
   background-position: center;
   height: 100%;
   width: 100%;
+  border-radius: 50%;
 }
+
 
 .containerUcapan {
   width: 350px;

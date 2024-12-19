@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { Header } from "./Interface/Header";
 import { EventDetails } from "./Interface/EvenDetails";
 import { Gallery } from "./Interface/Gallery";
 import { CommentForm } from "./Interface/Comments/CommentForm";
@@ -10,6 +9,7 @@ import { ThankYou } from "./Interface/ThankYou";
 import {Location} from "./Interface/location";
 import { AlfiansImage } from "./alfiansimage";
 import { Ucapan } from "./ucapan";
+import { Header } from "./Interface/Header";
 
 export function Sections() {
   const sectionsRef = useRef<HTMLDivElement>(null);
@@ -45,25 +45,25 @@ export function Sections() {
   return (
     <div ref={sectionsRef} className="relative z-10">
       {/* Hero Section */}
-      {/* <section className="h-screen flex items-center justify-center">
+      <section className="h-screen flex items-center justify-center">
         <Header />
-      </section> */}
+      </section>
 
       {/* Event Details Section */}
       <section className="min-h-screen flex items-center justify-center bg-black/30 backdrop-blur-sm">
         <EventDetails />
       </section>
-    
-  {/* Location Section */}
-  <section className="min-h-screen flex items-center justify-center">
+
+      {/* Location Section */}
+      <section className="min-h-screen flex items-center justify-center">
         <Location />
       </section>
-  {/* Image Section */}
-  <section className="min-h-screen flex items-center justify-center">
+      {/* Image Section */}
+      <section className="min-h-screen flex items-center justify-center">
         <AlfiansImage />
       </section>
-  {/* Ucapan Section */}
-  <section className="min-h-screen flex items-center justify-center">
+      {/* Ucapan Section */}
+      <section className="min-h-screen flex items-center justify-center">
         <Ucapan />
       </section>
 
@@ -71,8 +71,6 @@ export function Sections() {
       <section className="min-h-screen flex items-center justify-center">
         <Gallery />
       </section>
-
-    
 
       {/* Comments Section */}
       <section className="min-h-screen flex flex-col items-center justify-center bg-black/30 backdrop-blur-sm">

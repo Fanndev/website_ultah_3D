@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   const canvasRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -24,11 +25,20 @@ export default function App() {
       },
       opacity: 0.3,
     });
+
+    // Memutar lagu ulang tahun saat aplikasi dimuat
+    if (audioRef.current) {
+      audioRef.current
+        .play()
+        .catch((err) => console.error("Audio Error:", err));
+    }
   }, []);
 
   return (
     <div className="relative">
       <LoadingScreen />
+      {/* Audio Player */}
+      <audio ref={audioRef} src="/public/happy-birthday.mp3" loop />
       <div
         ref={canvasRef}
         className="h-screen fixed inset-0 pointer-events-none"
