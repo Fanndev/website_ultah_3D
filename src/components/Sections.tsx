@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Header } from "./Interface/Header";
+// import { Header } from "./Interface/Header";
 import { EventDetails } from "./Interface/EvenDetails";
 import { Gallery } from "./Interface/Gallery";
 import { CommentForm } from "./Interface/Comments/CommentForm";
