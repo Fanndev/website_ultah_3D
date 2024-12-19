@@ -1,0 +1,53 @@
+import { useEffect, useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { Experience } from "./components/Experience";
+import { LoadingScreen } from "./components/LoadingScreen";
+import { Sections } from "./components/Sections";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function App() {
+  const canvasRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!canvasRef.current) return;
+
+    gsap.to(canvasRef.current, {
+      scrollTrigger: {
+        trigger: canvasRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+      opacity: 0.3,
+    });
+  }, []);
+
+  return (
+    <div className="relative">
+      <LoadingScreen />
+      <div
+        ref={canvasRef}
+        className="h-screen fixed inset-0 pointer-events-none"
+      >
+        <Canvas
+          shadows
+          camera={{
+            fov: 45,
+            near: 0.1,
+            far: 200,
+            position: [2.5, 4, 6],
+          }}
+        >
+          <Suspense fallback={null}>
+            <Experience />
+          </Suspense>
+        </Canvas>
+      </div>
+      <Sections />
+    </div>
+  );
+}

@@ -1,0 +1,59 @@
+.map {
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/mapimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+
+.mapContainer h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: yellow 0px 0px 4px;
+}
+.mapContainer h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: yellow;
+  text-shadow: yellow 0px 0px 4px;
+  margin-top: -30px;
+}
+
+.alfContainer {
+  height: 600px;
+  width: 100vw;
+
+  padding: 50px 100px;
+}
+
+.alfContainer .image {
+  background-image: url(./assets/alfian.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.containerUcapan {
+  width: 350px;
+  text-align: center;
+}
+
+.containerUcapan h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: yellow 0px 0px 4px;
+}
