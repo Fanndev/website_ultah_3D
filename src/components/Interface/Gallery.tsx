@@ -39,11 +39,15 @@ export function Gallery() {
         <ChevronLeft size={40} />
       </button>
 
+
+
       <img
         src={gallery[currentIndex]}
         alt={`Gallery image ${currentIndex + 1}`}
         className="max-h-[80vh] max-w-[80vw] object-contain"
       />
+
+     
 
       <button
         onClick={nextImage}

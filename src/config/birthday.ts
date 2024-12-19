@@ -1,6 +1,6 @@
 export const birthdayConfig = {
   celebrant: {
-    name: "M. Alvian Maulana",
+    name: "Irfan Fadhlurrahman",
     age: 20,
     photo:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=500",
