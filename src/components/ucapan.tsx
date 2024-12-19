@@ -18,7 +18,7 @@ export function Ucapan() {
           lagi untuk merayakan hari spesial ini bersama saya!
         </p>
         <br />
-        <p>- M. Alfian Maulana -</p>
+        <p>- Irfan Fadhlurrahman -</p>
       </div>
     </>
   );

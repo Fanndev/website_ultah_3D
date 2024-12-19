@@ -45,9 +45,9 @@ export function Sections() {
   return (
     <div ref={sectionsRef} className="relative z-10">
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center">
+      {/* <section className="h-screen flex items-center justify-center">
         <Header />
-      </section>
+      </section> */}
 
       {/* Event Details Section */}
       <section className="min-h-screen flex items-center justify-center bg-black/30 backdrop-blur-sm">
