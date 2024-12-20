@@ -38,7 +38,7 @@ export default function App() {
     <div className="relative">
       <LoadingScreen />
       {/* Audio Player */}
-      <audio ref={audioRef} src="/happy-birthday.mp3" loop />
+      <audio ref={audioRef} src="/happy-birthday.mp3" autoPlay loop />
       <div
         ref={canvasRef}
         className="h-screen fixed inset-0 pointer-events-none"
