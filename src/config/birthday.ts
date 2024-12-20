@@ -5,11 +5,10 @@ export const birthdayConfig = {
     photo:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=500",
     gallery: [
-      "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?auto=format&fit=crop&q=80&w=500",
-      "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&q=80&w=500",
-      "https://images.unsplash.com/photo-1516571748831-5d81767b788d?auto=format&fit=crop&q=80&w=500",
-      "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=500",
-      "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80&w=500",
+      "/public/ajis.jpeg",
+      "/public/alfian.jpeg",
+      "/public/fanndev.jpeg",
+      "/public/therich.jpeg",
     ],
   },
   event: {
