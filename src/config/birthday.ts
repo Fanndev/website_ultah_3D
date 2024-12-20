@@ -5,10 +5,10 @@ export const birthdayConfig = {
     photo:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=500",
     gallery: [
-      "/public/ajis.jpeg",
-      "/public/alfian.jpeg",
-      "/public/fanndev.jpeg",
-      "/public/therich.jpeg",
+      "/ajis.jpeg",
+      "/alfian.jpeg",
+      "/fanndev.jpeg",
+      "/therich.jpeg",
     ],
   },
   event: {
